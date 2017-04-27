@@ -1,0 +1,21 @@
+.margin-top {
+    margin-top: 30px;
+}
+li {
+    cursor: pointer;
+}
+
+.text-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-responsive {
+    height: 15em;
+}
+
+#liImage {
+    height: 50px;
+}
+
