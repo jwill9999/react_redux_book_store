@@ -27,7 +27,7 @@ class BookDetail extends Component {
                          </div>
                      </div><br />
                      <div className="row margin-top">
-                         <div className="col-sm-5 ">
+                         <div className="col-sm-5 margin-top ">
                             <img className="img-responsive " src={this.props.book.imageUrl} />
                           </div>
                           <br />

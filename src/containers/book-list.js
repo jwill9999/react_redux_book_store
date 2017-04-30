@@ -3,7 +3,17 @@ import { connect } from 'react-redux';
 import { selectBook } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
+
+
 class BookList extends Component {
+ constructor(props){
+   super(props)
+
+
+   
+ }
+
+ active;
 
   //here we are using a map function to return an li containing prop data
   renderList() {
@@ -11,17 +21,18 @@ class BookList extends Component {
       .props
       .books
       .map((book) => {
-        return (<li
-          onClick={() => this.props.selectBook(book)}
-          className="list-group-item margin-top "
+        return (<li 
+          onClick={() => this.props.selectBook(book)}        
+          className="list-group-item margin-top  "
           key={book.title}
         >
-          <div className="media">
+          <div className="media ">
             <div className="media-left">             
                 <img id="liImage" className="media-object" src={book.imageUrl}  />              
             </div>            
             <div className="media-body ">
               <p className="media-heading "><b>{book.title}</b></p>
+              <p>{book.price}</p>
            </div>
          </div>
           

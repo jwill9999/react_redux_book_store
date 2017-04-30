@@ -1,6 +1,7 @@
 export function selectBook(book) {
+    
     return {
-        type: 'SELECTED_BOOK',
+        type: 'SELECTED_BOOK',        
         payLoad: book
     }
 }
